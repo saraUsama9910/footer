@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bluewave Premium Footer</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background: #0f172a;
+      }
+
+      footer {
+        background: linear-gradient(135deg, #0f172a, #1e293b);
+        color: white;
+        padding: 70px 20px 30px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      /* Glow background effect */
+      footer::before {
+        content: "";
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        background: radial-gradient(circle, #3b82f6, transparent);
+        top: -100px;
+        left: -100px;
+        opacity: 0.2;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 50px;
+        position: relative;
+        z-index: 1;
+      }
+
+      h2 {
+        font-size: 26px;
+        font-weight: 700;
+        margin-bottom: 15px;
+      }
+
+      h3 {
+        font-size: 18px;
+        margin-bottom: 20px;
+        position: relative;
+      }
+
+      h3::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        width: 40px;
+        height: 3px;
+        background: #3b82f6;
+        border-radius: 5px;
+      }
+
+      p {
+        color: #cbd5e1;
+        font-size: 14px;
+        line-height: 1.7;
+      }
+
+      .links ul {
+        list-style: none;
+      }
+
+      .links li {
+        margin-bottom: 12px;
+      }
+
+      .links a {
+        text-decoration: none;
+        color: #cbd5e1;
+        font-size: 14px;
+        transition: 0.3s;
+      }
+
+      .links a:hover {
+        color: #3b82f6;
+        padding-left: 8px;
+      }
+
+      .social {
+        display: flex;
+        gap: 15px;
+        margin-top: 20px;
+      }
+
+      .social i {
+        background: rgba(255, 255, 255, 0.08);
+        padding: 12px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: 16px;
+      }
+
+      .social i:hover {
+        background: #3b82f6;
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(59, 130, 246, 0.4);
+      }
+
+      .newsletter input {
+        padding: 12px;
+        width: 100%;
+        border: none;
+        border-radius: 8px;
+        margin-top: 10px;
+        outline: none;
+      }
+
+      .newsletter button {
+        margin-top: 10px;
+        padding: 12px;
+        width: 100%;
+        border: none;
+        border-radius: 8px;
+        background: #3b82f6;
+        color: white;
+        font-weight: 600;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .newsletter button:hover {
+        background: #2563eb;
+      }
+
+      .bottom {
+        text-align: center;
+        margin-top: 50px;
+        padding-top: 20px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        color: #94a3b8;
+        font-size: 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <footer>
+      <div class="container">
+        <!-- About -->
+        <div>
+          <h2>Bluewave Studio</h2>
+          <p>
+            We craft high-quality digital experiences with modern UI and
+            responsive clean designs that scale beautifully.
+          </p>
+          <div class="social">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin-in"></i>
+            <i class="fab fa-twitter"></i>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h3>Contact</h3>
+          <p>Email: info@bluewave.com</p>
+          <p>Phone: +20 100 000 0000</p>
+          <p>Cairo, Egypt</p>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="newsletter">
+          <h3>Newsletter</h3>
+          <p>Subscribe to get updates & offers</p>
+          <input type="email" placeholder="Enter your email" />
+          <button>Subscribe</button>
+        </div>
+      </div>
+
+      <div class="bottom">© 2026 Bluewave Studio. All rights reserved.</div>
+    </footer>
+  </body>
+</html>
